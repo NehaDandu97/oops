@@ -1,0 +1,157 @@
+# class FirstClass:
+#     pass
+# obj1=FirstClass()
+# print(type(obj1))
+
+# class CarModel:
+#     pass
+# c1=CarModel()
+# c2=CarModel()
+# print(type(c1))
+
+# class FirstClass:
+#     pass
+# obj=FirstClass()
+# obj.name="lilly"
+# obj.address="hyd"
+# print(obj.name)
+# print(obj.address)
+# obj1=FirstClass()
+# obj1.name="dolly"
+# obj1.address="delhi"
+# print(obj1.name)
+# print(obj1.address)
+
+# class FirstClass:
+#     def __init__(self):
+#         print("everytime u creat a new object init function is called and excuted")
+# obj=FirstClass()
+# obj.name="lilly"
+# obj.address="hyd"
+# print(obj.name)
+# print(obj.address)
+# obj1=FirstClass()
+# obj1.name="dolly"
+# obj1.address="delhi"
+# print(obj1.name)
+# print(obj1.address)
+
+# class FirstClass:
+#     def __init__(self,name,rollno,age):
+#         self.Name=name
+#         self.Rollno=rollno
+#         self.Age=age
+# o1=FirstClass("lilly",1,19)
+# o2=FirstClass("dolly",2,20)
+# print(o1.Name)
+# print(o2.Name)
+
+# class FistClass:
+#     def __init__(self,name,address):
+#         self.name=name
+#         self.address=address
+# o1=FistClass("lilly","hyd")
+# o2=FistClass("dolly","delhi")
+# print(o1.name)
+# print(o1.address)
+# print(o2.name,o2.address)
+
+# class FistClass:
+#     def __init__(self,name,address):
+#         self.name=name
+#         self.address=address
+#         self.insta_follows=0
+# o1=FistClass("lilly","hyd")
+# o2=FistClass("dolly","delhi")
+# print(o1.name)
+# print(o1.address)
+# print(o1.insta_follows)
+# print(o2.name,o2.address,o2.insta_follows)
+
+# class FistClass:
+#     def __init__(self,name,address,insta_follows=0):
+#         self.name=name
+#         self.address=address
+#         self.insta_follows=insta_follows
+# o1=FistClass("lilly","hyd",1)
+# o2=FistClass("dolly","delhi")
+# print(o1.name)
+# print(o1.address)
+# print(o1.insta_follows)
+# print(o2.name,o2.address,o2.insta_follows)
+
+# class Person:
+#     insta_follows=0
+#     def __init__(self,name,city):
+#         self.name=name
+#         self.city=city
+#     def eat(self):
+#         print("eat at office")
+#     def works(self):
+#         print(f"works at {self.city}")
+# p1=Person("neha","hyd")
+# print(p1.name,p1.city)
+# print(p1.insta_follows)
+# p1.eat()
+# p2=Person("chethu","delhi")
+# print(p2.name,p2.city)
+# p2.eat()
+# p2.works()
+
+# class Person:
+#     followers=0
+#     def update_follower(self,follower_name):
+#         self.followers+=1
+# p1=Person()
+# p1.update_follower("xxx")
+# p1.update_follower("yyy")
+# print(p1.followers)
+# p2=Person()
+# print(p2.followers)
+
+# class Person:
+#     def eat(self):
+#         return "eat healthy food"
+#     def sleep(self):
+#         return "sleep 8hrs"
+# p1=Person()
+# print(p1.eat())
+# print(p1.sleep())
+
+# class Fruits:
+#     def __init__(self,fname,fcolor):
+#         self.fname=fname
+#         self.fcolor=fcolor
+#     def describe(self):
+#         print(f"{self.fname} is {self.fcolor} color")
+# f1=Fruits("apple","red")
+# print(f1.fname,f1.fcolor)
+# f1.describe()
+# f2=Fruits("banana","yellow")
+# f2.describe()
+
+# class Fruits:
+#     def __init__(self,fname,fcolor):
+#         self.fname=fname
+#         self.fcolor=fcolor
+#     def describe(self,shape):
+#         print(f"{self.fname} is {self.fcolor} color and I'm {shape}")
+# f1=Fruits("apple","red")
+# f1.describe("round")
+# print(f1.fname,f1.fcolor)
+# f2=Fruits("banana","yellow")
+# f2.describe("curve")
+
+# area and circumference of circle
+
+# class Circle:
+#     pi=3.14
+#     def __init__(self,radius):
+#         self.radius=radius
+#     def area(self):
+#         print(self.pi*self.radius**2)
+#     def circumference(self):
+#         print(2*self.pi*self.radius)
+# c1=Circle(4)
+# c1.area()
+# c1.circumference()
