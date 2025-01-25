@@ -1,0 +1,107 @@
+# class Parent:
+#     def eyes(self):
+#         print("eyes of parent")
+#     def nose(self):
+#         print("nose of parent")
+# class Child(Parent):
+#     def color(self):
+#         print("different color")
+#     def nose(self):
+#         super().nose()
+#         print("differnt nose")
+# c1=Child()
+# c1.eyes()
+# c1.color()
+# c1.nose()
+
+# class Parent:
+#     def __init__(self):
+#         self.no_eyes=2
+#         self.no_nose=1
+# class Child(Parent):
+#     pass
+# c1=Child()
+# print(c1.no_eyes)
+# print(c1.no_nose)
+
+# class Parent:
+#     def __init__(self):
+#         self.no_eyes=2
+#         self.no_nose=1
+# class Child(Parent):
+#     def __init__(self,name):
+#         self.name=name
+#         super().__init__()
+# c1=Child("lilly")
+# print(c1.name)
+# print(c1.no_eyes)
+# print(c1.no_nose)
+
+# class Parent:
+#     def __init__(self,no_heart):
+#         self.no_eyes=2
+#         self.no_nose=1
+#         self.no_heart=no_heart
+# class Child(Parent):
+#     def __init__(self,name,heart):
+#         self.name=name
+#         super().__init__(heart)
+#     def dispaly(self):
+#         print(f"hi, I am {self.name} and i have {self.no_heart} heart , {self.no_eyes} eyes,{self.no_nose} nose")
+# p1=Parent(1)
+# print(p1.no_eyes)
+# print(p1.no_nose)
+# print(p1.no_heart)
+# c1=Child("lilly",1)
+# print(c1.name)
+# print(c1.no_eyes)
+# print(c1.no_nose)
+# print(c1.no_heart)
+# c1.dispaly()
+
+
+# MUTIPLE INHERITANCE 
+# class Parent1:
+#     def eyes(self):
+#         print("parent1 eyes")
+#     def hair(self):
+#         print("parent1 hair")
+# class Parent2:
+#     def nose(self):
+#         print("parent2 nose")
+#     def hair(self):
+#         print("parent2 hair")
+# class child(Parent1,Parent2):
+#     def hair(self):
+#         print("child hair")
+# c1=child()
+# c1.eyes()
+# c1.nose()
+# c1.hair()
+# Parent2.hair(c1)
+
+# class Parent1:
+#     def __init__(self,no_heart):
+#         print("calling parent1")
+#         self.no_eyes=2
+#         self.no_nose=1
+#         self.no_heart=no_heart
+# class Parent2:
+#     def __init__(self,name):
+#         print("calling parent2")
+#         self.name=name
+
+# class child(Parent1,Parent2):
+#     def __init__(self,name,heart,language):
+#         Parent1.__init__(self,heart)
+#         Parent2.__init__(self,name)
+#         self.language=language
+#     def display(self):
+#         print(f"hi , I'm {self.name} and i have {self.no_heart} heart and I know {self.language} language")
+# c1=child("lilly",1,"telugu")
+# print(c1.no_nose)
+# print(c1.name)
+# print(c1.no_heart)
+# print(c1.language)
+# c1.display()
+
