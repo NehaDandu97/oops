@@ -61,6 +61,8 @@
 
 
 # MUTIPLE INHERITANCE 
+
+
 # class Parent1:
 #     def eyes(self):
 #         print("parent1 eyes")
@@ -104,4 +106,112 @@
 # print(c1.no_heart)
 # print(c1.language)
 # c1.display()
+
+# MULTI-LEVEL INHERITANCE 
+
+# class Grandparent:
+#     def eyes(self):
+#         print("black eyes")
+#     def color(self):
+#         print("grandfather color")
+# class Parent(Grandparent):
+#     def nose(self):
+#         print("small nose")
+# class Child(Parent):
+#     def color(self):
+#         # Grandparent.color(self)
+#         super().color()
+#         print("normal color")
+# class Sibling(Child):
+#     def color(self):
+#         print("thin hair")
+#         # return super().color()   
+# c1=Child()
+# c1.eyes()
+# c1.nose()
+# c1.color()
+# s1=Sibling()
+# s1.eyes()
+# s1.color()
+
+# class Grandparent:
+#     family=True
+#     def __init__(self,no_heart):
+#         print("calling init from Grandparent class")
+#         self.no_eyes=2
+#         self.no_heart=no_heart
+
+# class Parent(Grandparent):
+#     def __init__(self,name):
+#         print("calling init from parent class")
+#         self.name=name
+
+# class Child(Parent):
+#     def __init__(self,heart,name,study):
+#         Grandparent.__init__(self,heart)
+#         Parent.__init__(self,name)
+#         self.study=study
+
+# c1=Child(1)
+# print(c1.no_eyes)
+
+# c1=Child("lilly")
+# print(c1.name)
+
+# c1=Child(1,"lilly","btech")
+# print(c1.name)
+# print(c1.study)
+# print(c1.family)
+
+
+# Hierarchical Inheritance
+
+
+# class Parent:
+#     def eyes(self):
+#         print("black eyes")
+# class Child1(Parent):
+#     def color(self):
+#         print("child1 color")
+# class Child2(Parent):
+#     def hair(self):
+#         print("child2 hair")
+# c1=Child1()
+# c1.color()
+# c1.eyes()
+# c2=Child2()
+# c2.hair()
+# c2.eyes()
+
+# class Parent:
+#     def __init__(self,name,age):
+#         print("calling init from human class")
+#         self.name=name
+#         self.age=age
+#     def showDetails(self):
+#         print(f"name: {self.name} ,age: {self.age}")
+# class Child1(Parent):
+#     def __init__(self, name, age,location):
+#         print("calling init from child 1 class")
+#         Parent.__init__(self,name,age)
+#         self.location=location
+# class Child2(Parent):
+#     def __init__(self, name, age,can_dance):
+#         print("calling init from child 2 class")
+#         super().__init__(name, age)
+#         self.know_dance=can_dance
+#     def showDetails_child2(self):
+#         Parent.showDetails(self)
+#         print(f"know_dance:{self.know_dance}")
+        
+# c1=Child1("macro",25,"hyd")
+# print(c1.name)
+# print(c1.age)
+# print(c1.location)
+# c1.showDetails()
+# c2=Child2("macro",25,True)
+# print(c2.age)
+# c2.showDetails()
+# print(c2.know_dance)
+# c2.showDetails_child2()
 
