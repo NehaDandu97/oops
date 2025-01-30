@@ -215,3 +215,22 @@
 # print(c2.know_dance)
 # c2.showDetails_child2()
 
+# Diamond Problem in Inheritance | MRO in Python | C3 Linearization Algorithm Python Programming
+
+class A:
+    def display(self):
+        print("display from A class")
+class B(A):
+    pass
+    # def display(self):
+    #     print("display from B class")
+class C(A):
+    def show(self):
+        print("Hi from C class")
+    # def display(self):
+    #     print("display from C class")
+class D(B,C): 
+    pass
+o1=D()
+o1.display()
+# print(D.mro())
