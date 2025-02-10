@@ -1,0 +1,65 @@
+store_modules.py (we can import from this file)
+
+a=10
+
+def area_square(side):
+    return side**2
+
+def calculator(x,y):
+    print("addition is :",x+y)
+    print("subtraction is :",x-y)
+    print("multiplication is :",x*y)
+    print("division is :",x/y)
+
+
+# Built - In Modules
+# print(help("modules"))
+
+# print(help("math"))
+# print(help("random"))
+
+# import math
+# print(math.e)
+
+# import store_modules
+# print(store_modules.a)
+# print(store_modules.area_square(4))
+
+# import as alias
+# import store_modules as m
+# print(m.a)
+# print(m.area_square(4))
+
+# specific function
+# from store_modules import calculator
+# calculator(3,2)
+
+# specific function as alias
+# from store_modules import calculator as c
+# c(3,2)
+
+# can import mutiple functions and data
+# from store_modules import calculator,area_square,a
+# print(a)
+# print(area_square(4))
+# calculator(3,2)
+
+# "  * " import everything
+# from store_modules import *
+# print("value of a :",a)
+# print(area_square(4))
+# calculator(3,2)
+
+# specifically exclusively 
+# from store_modules import a
+# a,b=1,2
+# sum=a+b
+# print(sum)
+# print(a)
+
+# import store_modules 
+# a,b=1,2
+# sum=a+b
+# print("sum :",sum)
+# print("imported from another file:",store_modules.a)
+
