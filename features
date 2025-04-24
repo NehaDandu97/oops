@@ -1,0 +1,65 @@
+Abstraction
+Concept: Hiding complex implementation and showing only essential features.
+
+from abc import ABC,abstractmethod
+class Animal(ABC):
+    def make_sound(self):
+        pass
+class dog(Animal):
+    def make_sound(self):
+        print("bark")
+class cat(Animal):
+    def make_sound(self):
+        print("meow")
+d=dog()
+c=cat()
+d.make_sound()
+c.make_sound()
+
+Encapsulation
+Concept: Bundling data and methods that operate on that data within one unit (class). Hides internal details.
+
+class bank:
+    def __init__(self,name):
+        self.name=name
+        self.__balance=0
+    def deposit(self,amount):
+        self.__balance+=amount
+    def get_balance(self):
+        print(f'{self.__balance} is in  {self.name} account')
+acc=bank("neha")
+acc.deposit(500)
+acc.get_balance()
+
+Inheritance
+Concept: One class inherits from another, reusing code.
+        
+class Human:
+    def eat(self):
+        print("food")
+class Male(Human):
+    def eat(self):
+        print("non-veg")
+h=Human()
+h.eat()
+m=Male()
+m.eat()
+
+
+Polymorphism
+Concept: Same method behaves differently based on object.
+class Human1:
+    def speak(self):
+        print("telugu")
+class Human2:
+    def speak(self):
+        print("korea")
+def lang(l):
+    l.speak()
+lang(Human1())
+lang(Human2())
+    
+
+
+
+    
